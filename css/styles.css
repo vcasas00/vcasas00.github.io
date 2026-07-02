@@ -1263,6 +1263,7 @@ svg {
 
 .theme-toggle {
   display: inline-grid;
+  flex: 0 0 42px;
   width: 42px;
   height: 42px;
   place-items: center;
@@ -1297,4 +1298,45 @@ svg {
 
 :root[data-theme="light"] .theme-toggle__icon--moon {
   display: block;
+}
+@media (max-width: 1240px) and (min-width: 861px) {
+  .nav.container {
+    width: min(100% - 24px, var(--container));
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .nav__brand {
+    gap: 10px;
+  }
+
+  .nav__brand span:last-child {
+    max-width: 122px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .nav__links {
+    gap: 3px;
+  }
+
+  .nav__link {
+    min-height: 38px;
+    padding: 0 9px;
+    font-size: 0.88rem;
+  }
+
+  .language-switcher__button {
+    min-width: 34px;
+    padding: 0 7px;
+  }
+
+  .theme-toggle {
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+  }
 }
