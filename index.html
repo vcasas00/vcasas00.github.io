@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional portfolio for Vicent Casasús Villanova, IT Consultant and Developer focused on automation, software, BI, AI integrations and enterprise platforms."
+    />
+    <title>Vicent Casasús Villanova | IT Consultant & Developer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="loader" data-loader data-i18n-aria-label="aria.loader" aria-label="Loading portfolio">
+      <div class="loader__mark" aria-hidden="true"></div>
+    </div>
+
+    <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav container" data-i18n-aria-label="aria.primaryNavigation" aria-label="Primary navigation">
+        <a class="nav__brand" href="#top" data-i18n-aria-label="aria.home" aria-label="Vicent Casasús Villanova home">
+          <span class="nav__mark">VC</span>
+          <span>Vicent Casasús</span>
+        </a>
+
+        <ul class="nav__links" data-nav-links>
+          <li><a href="#about" class="nav__link" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" class="nav__link" data-i18n="nav.services">Services</a></li>
+          <li><a href="#case-studies" class="nav__link" data-i18n="nav.caseStudies">Case Studies</a></li>
+          <li><a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#experience" class="nav__link" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div
+          class="language-switcher"
+          data-language-switcher
+          data-i18n-aria-label="aria.languageSwitcher"
+          role="group"
+          aria-label="Language selector"
+        >
+          <button class="language-switcher__button" type="button" data-language="en" aria-pressed="true">EN</button>
+          <button class="language-switcher__button" type="button" data-language="es" aria-pressed="false">ES</button>
+          <button class="language-switcher__button" type="button" data-language="ca" aria-pressed="false">CA</button>
+        </div>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          data-nav-toggle
+          data-i18n-aria-label="aria.openMenu"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero__ambient" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Independent technical consulting</p>
+            <h1 id="hero-title">Vicent Casasús Villanova</h1>
+            <p class="hero__title" data-i18n="hero.role">IT Consultant &amp; Developer</p>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">
+              Helping companies automate processes, build custom software, integrate AI and improve business operations.
+            </p>
+
+            <div class="hero__actions" data-i18n-aria-label="aria.primaryActions" aria-label="Primary actions">
+              <a class="button button--primary" href="#case-studies" data-i18n="hero.viewProjects">View Projects</a>
+              <a class="button button--ghost" href="#contact" data-i18n="hero.contact">Contact</a>
+            </div>
+
+            <dl class="hero__metrics" data-i18n-aria-label="aria.focusAreas" aria-label="Consulting focus areas">
+              <div>
+                <dt data-i18n="hero.metricFocusLabel">Focus</dt>
+                <dd data-i18n="hero.metricFocusValue">Automation</dd>
+              </div>
+              <div>
+                <dt data-i18n="hero.metricDeliveryLabel">Delivery</dt>
+                <dd data-i18n="hero.metricDeliveryValue">Software + BI</dd>
+              </div>
+              <div>
+                <dt data-i18n="hero.metricPlatformsLabel">Platforms</dt>
+                <dd data-i18n="hero.metricPlatformsValue">Enterprise IT</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div
+            class="hero__visual reveal"
+            data-i18n-aria-label="aria.technicalIllustration"
+            aria-label="Technical systems illustration"
+          >
+            <div class="visual-card visual-card--main">
+              <div class="visual-card__top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="visual-card__body">
+                <div class="code-line code-line--wide"></div>
+                <div class="code-line"></div>
+                <div class="code-line code-line--short"></div>
+              </div>
+            </div>
+            <div class="visual-node visual-node--one">
+              <span>AI</span>
+            </div>
+            <div class="visual-node visual-node--two">
+              <span>BI</span>
+            </div>
+            <div class="visual-node visual-node--three">
+              <span>Ops</span>
+            </div>
+            <div class="visual-panel">
+              <div class="visual-panel__bar"></div>
+              <div class="visual-panel__row">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="visual-panel__row">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="visual-orbit" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+            <h2 id="about-title" data-i18n="about.title">Practical technology for operational teams</h2>
+            <p data-i18n="about.text">
+              I design, build and support business technology that reduces manual work, connects systems and gives teams
+              clearer information for everyday decisions.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5z"/><path d="m8 12 2 2 5-5"/></svg>
+              </span>
+              <h3 data-i18n="about.cardSoftwareTitle">Custom Software</h3>
+              <p data-i18n="about.cardSoftwareText">Internal tools, workflows and integrations built around how the business actually operates.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 19V5"/><path d="M5 19h14"/><path d="M9 16v-5"/><path d="M13 16V8"/><path d="M17 16v-7"/></svg>
+              </span>
+              <h3 data-i18n="about.cardBiTitle">Business Intelligence</h3>
+              <p data-i18n="about.cardBiText">Dashboards and reporting models that turn fragmented operational data into usable insight.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3v4"/><path d="M12 17v4"/><path d="M3 12h4"/><path d="M17 12h4"/><path d="M7.8 7.8 5 5"/><path d="m19 19-2.8-2.8"/><path d="m16.2 7.8 2.8-2.8"/><path d="M5 19l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
+              </span>
+              <h3 data-i18n="about.cardAutomationTitle">Automation</h3>
+              <p data-i18n="about.cardAutomationText">Reliable process automation that removes repetitive tasks and improves response times.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6.5 12 3l8 3.5-8 3.5z"/><path d="M4 12.5 12 16l8-3.5"/><path d="M4 17.5 12 21l8-3.5"/></svg>
+              </span>
+              <h3 data-i18n="about.cardPlatformsTitle">Enterprise Platforms</h3>
+              <p data-i18n="about.cardPlatformsText">Configuration, administration and support for platforms used by technical and business teams.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="services.eyebrow">What I Do</p>
+            <h2 id="services-title" data-i18n="services.title">Consulting and development with business context</h2>
+            <p data-i18n="services.text">
+              Services are focused on measurable operational improvement: less friction, better visibility and stronger
+              technical foundations.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <h3 data-i18n="services.customAppsTitle">Custom Applications</h3>
+              <p data-i18n="services.customAppsText">Build internal applications that simplify workflows, centralize information and reduce dependency on spreadsheets.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3 data-i18n="services.biTitle">Business Intelligence</h3>
+              <p data-i18n="services.biText">Create reporting systems that help teams monitor performance, identify bottlenecks and act with confidence.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3 data-i18n="services.aiTitle">AI Integration</h3>
+              <p data-i18n="services.aiText">Connect AI capabilities to practical use cases such as document handling, support workflows and knowledge access.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3 data-i18n="services.atlassianTitle">Atlassian Consulting</h3>
+              <p data-i18n="services.atlassianText">Improve Jira and Confluence setups so delivery teams can track work, automate rules and report clearly.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3 data-i18n="services.automationTitle">Process Automation</h3>
+              <p data-i18n="services.automationText">Replace repetitive manual tasks with controlled automations that improve speed, consistency and auditability.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3 data-i18n="services.supportTitle">Technical Support</h3>
+              <p data-i18n="services.supportText">Support users, document systems and train teams so technology remains reliable after implementation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="case-studies" aria-labelledby="case-studies-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="cases.eyebrow">Case Studies</p>
+            <h2 id="case-studies-title" data-i18n="cases.title">Problem solving across software, data and platforms</h2>
+            <p data-i18n="cases.text">
+              These examples use generic business names and intentionally avoid sensitive client details.
+            </p>
+          </div>
+
+          <div class="case-grid">
+            <article class="case-card reveal">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.hospitalityClient">Hospitality Company</span>
+                <h3 data-i18n="cases.hospitalityTitle">Power BI for Hospitality Analytics</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Challenge</dt>
+                  <dd data-i18n="cases.hospitalityChallenge">Operational reporting was distributed across files, making performance review slow.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solution</dt>
+                  <dd data-i18n="cases.hospitalitySolution">Built a consolidated data model and dashboards for revenue, occupancy and operations review.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Technologies</dt>
+                  <dd>Power BI, Power Query, DAX, Excel, data modeling</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Business impact</dt>
+                  <dd data-i18n="cases.hospitalityImpact">Enabled faster reporting cycles and clearer visibility into operational trends.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="case-card reveal">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.energyClient">Energy Industry Company</span>
+                <h3 data-i18n="cases.energyAvailabilityTitle">Custom Machine Availability Control App</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Challenge</dt>
+                  <dd data-i18n="cases.energyAvailabilityChallenge">Operational teams needed a clearer way to track machine availability and identify status changes.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solution</dt>
+                  <dd data-i18n="cases.energyAvailabilitySolution">Developed a custom application to register machine status, centralize availability data and support operational follow-up.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Technologies</dt>
+                  <dd>Custom application, JavaScript, REST APIs, SQL Server, reporting</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Business impact</dt>
+                  <dd data-i18n="cases.energyAvailabilityImpact">Improved control over asset availability and helped teams react faster to operational changes.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="case-card reveal">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.roadClient">Road Infrastructure Company</span>
+                <h3 data-i18n="cases.roadCloudTitle">Enterprise Cloud Environment Migration</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Challenge</dt>
+                  <dd data-i18n="cases.roadCloudChallenge">The company needed to modernize its business environment and move key tools and data to cloud services.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solution</dt>
+                  <dd data-i18n="cases.roadCloudSolution">Supported the migration plan, platform setup, data transfer and user transition for the cloud environment.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Technologies</dt>
+                  <dd>Cloud platforms, Microsoft 365, data migration, identity, user support</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Business impact</dt>
+                  <dd data-i18n="cases.roadCloudImpact">Improved accessibility, reduced local dependency and gave teams a more scalable business environment.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="case-card reveal">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.financialClient">Financial Services Company</span>
+                <h3 data-i18n="cases.jiraAutomationTitle">Jira Automation &amp; Groovy Scripts</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Challenge</dt>
+                  <dd data-i18n="cases.jiraAutomationChallenge">Manual ticket handling created delays and inconsistent updates across operational teams.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solution</dt>
+                  <dd data-i18n="cases.jiraAutomationSolution">Implemented workflow automations and scripted validations to standardize ticket transitions.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Technologies</dt>
+                  <dd>Jira, ScriptRunner, Groovy, REST APIs</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Business impact</dt>
+                  <dd data-i18n="cases.jiraAutomationImpact">Reduced repetitive administration and improved process consistency for service operations.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="case-card reveal">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.insuranceClient">Insurance Company</span>
+                <h3 data-i18n="cases.insuranceAdminTitle">Atlassian Environment Administration</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Challenge</dt>
+                  <dd data-i18n="cases.insuranceAdminChallenge">Teams needed a more controlled Atlassian environment for permissions, workflows and daily support.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solution</dt>
+                  <dd data-i18n="cases.insuranceAdminSolution">Administered Jira and Confluence configuration, managed access, supported users and maintained operational documentation.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Technologies</dt>
+                  <dd>Jira, Confluence, Atlassian Cloud, permissions, workflows</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Business impact</dt>
+                  <dd data-i18n="cases.insuranceAdminImpact">Improved platform governance, reduced user friction and kept delivery teams supported in their daily work.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="case-card reveal">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.recruitmentClient">Recruitment Company</span>
+                <h3 data-i18n="cases.recruitmentCloudTitle">Atlassian Cloud Migration for Recruitment Operations</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Challenge</dt>
+                  <dd data-i18n="cases.recruitmentCloudChallenge">The organization needed to move its Atlassian environment to cloud while preserving operational continuity.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solution</dt>
+                  <dd data-i18n="cases.recruitmentCloudSolution">Prepared the migration structure, reviewed projects and spaces, supported validation and helped users transition to Atlassian Cloud.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Technologies</dt>
+                  <dd>Jira Cloud, Confluence Cloud, Atlassian migration, Marketplace apps</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Business impact</dt>
+                  <dd data-i18n="cases.recruitmentCloudImpact">Modernized collaboration tools and gave teams a cleaner, cloud-based environment for recruitment operations.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="case-card reveal">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.roadClient">Road Infrastructure Company</span>
+                <h3 data-i18n="cases.jiraReportingTitle">Jira Dashboards &amp; Reporting</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Challenge</dt>
+                  <dd data-i18n="cases.jiraReportingChallenge">Project status was difficult to compare across teams and reporting formats.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solution</dt>
+                  <dd data-i18n="cases.jiraReportingSolution">Designed Jira dashboards, filters and reporting views aligned with management needs.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Technologies</dt>
+                  <dd>Jira, JQL, dashboards, reporting workflows</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Business impact</dt>
+                  <dd data-i18n="cases.jiraReportingImpact">Improved delivery visibility and reduced manual preparation for recurring status meetings.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="case-card reveal">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.ngoClient">NGO</span>
+                <h3 data-i18n="cases.ngoTitle">NGO IT Administration &amp; Support</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Challenge</dt>
+                  <dd data-i18n="cases.ngoChallenge">Small teams needed reliable systems, user support and clear technical documentation.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solution</dt>
+                  <dd data-i18n="cases.ngoSolution">Provided platform administration, user assistance, asset organization and support processes.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Technologies</dt>
+                  <dd>Microsoft 365, Windows, networking, documentation</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Business impact</dt>
+                  <dd data-i18n="cases.ngoImpact">Strengthened daily IT operations and helped non-technical users work with fewer interruptions.</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="skills.eyebrow">Skills</p>
+            <h2 id="skills-title" data-i18n="skills.title">A cross-functional technical toolkit</h2>
+            <p data-i18n="skills.text">
+              Skills are grouped by delivery area instead of progress bars, because professional capability depends on
+              context, ownership and outcomes.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3 data-i18n="skills.development">Development</h3>
+              <div class="tag-list">
+                <span data-i18n="skills.tagCustomApps">Custom Apps</span><span data-i18n="skills.tagWebApps">Web Apps</span><span data-i18n="skills.tagMobileApps">Mobile Apps</span><span data-i18n="skills.tagDesktopApps">Desktop Apps</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3 data-i18n="skills.technologies">Technologies</h3>
+              <div class="tag-list">
+                <span>React</span><span>Flutter</span><span>JavaScript</span><span>PHP</span><span>HTML/CSS</span><span>AL</span><span>GDScript</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3 data-i18n="skills.bi">Business Intelligence</h3>
+              <div class="tag-list">
+                <span>Power BI</span><span>Tableau</span><span>DAX</span><span>R</span><span>Power Query</span><span>SQL Server</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3 data-i18n="skills.automation">Automation</h3>
+              <div class="tag-list">
+                <span>Workflows</span><span data-i18n="skills.tagScripts">Scripts</span><span data-i18n="skills.tagRestApis">REST APIs</span><span>Webhooks</span><span data-i18n="skills.tagAi">AI</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3 data-i18n="skills.platforms">Enterprise Platforms</h3>
+              <div class="tag-list">
+                <span>Atlassian</span><span>Business Central</span><span>Microsoft 365</span><span>Holded</span><span>Google Workspace</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <h3 data-i18n="skills.systems">Systems</h3>
+              <div class="tag-list">
+                <span>Windows Server</span><span>Linux</span><span data-i18n="skills.tagTechnicalSupport">Technical Support</span><span data-i18n="skills.tagTraining">Training</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="timeline.eyebrow">Timeline</p>
+            <h2 id="experience-title" data-i18n="timeline.title">Professional experience</h2>
+            <p data-i18n="timeline.text">
+              A practical path across consulting, platform administration, BI delivery and technical support.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-card reveal">
+              <span class="timeline-card__date" data-i18n="timeline.current">Current</span>
+              <h3 data-i18n="timeline.freelanceRole">Freelance IT Consultant &amp; Developer</h3>
+              <p class="timeline-card__company" data-i18n="timeline.freelanceCompany">Independent consulting</p>
+              <p data-i18n="timeline.freelanceText">Designing software, automation and reporting solutions for teams that need pragmatic technical delivery.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="timeline-card__date" data-i18n="timeline.consultingEngagement">Consulting engagement</span>
+              <h3 data-i18n="timeline.atlassianRole">Atlassian &amp; Power BI Consultant</h3>
+              <p class="timeline-card__company" data-i18n="timeline.enterpriseClients">Enterprise clients</p>
+              <p data-i18n="timeline.atlassianText">Improving Jira workflows, reporting structures and BI dashboards for operational and management teams.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="timeline-card__date" data-i18n="timeline.previousRole">Previous role</span>
+              <h3 data-i18n="timeline.systemsRole">Systems Administrator</h3>
+              <p class="timeline-card__company" data-i18n="timeline.businessOpsCompany">Business operations environment</p>
+              <p data-i18n="timeline.systemsText">Administering users, systems and support processes with a focus on reliability and documentation.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="timeline-card__date" data-i18n="timeline.previousRole">Previous role</span>
+              <h3 data-i18n="timeline.itBiRole">IT &amp; Power BI Consultant</h3>
+              <p class="timeline-card__company" data-i18n="timeline.reportingCompany">Reporting and operations teams</p>
+              <p data-i18n="timeline.itBiText">Delivering Power BI models, process support and technical improvements for business stakeholders.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="timeline-card__date" data-i18n="timeline.earlierRole">Earlier role</span>
+              <h3 data-i18n="timeline.systemsRole">Systems Administrator</h3>
+              <p class="timeline-card__company" data-i18n="timeline.internalItCompany">Internal IT services</p>
+              <p data-i18n="timeline.internalItText">Supporting infrastructure, users and day-to-day IT operations across business-critical environments.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="timeline-card__date" data-i18n="timeline.earlierRole">Earlier role</span>
+              <h3 data-i18n="timeline.technicianRole">IT Technician</h3>
+              <p class="timeline-card__company" data-i18n="timeline.supportCompany">Technical support</p>
+              <p data-i18n="timeline.technicianText">Resolving incidents, maintaining equipment and helping users work effectively with business systems.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 id="contact-title" data-i18n="contact.title">Let us discuss your next technical improvement</h2>
+            <p data-i18n="contact.text">
+              Available for consulting, automation, reporting and platform improvement projects.
+            </p>
+          </div>
+
+          <aside class="contact-card reveal" data-i18n-aria-label="aria.contactDetails" aria-label="Contact details">
+            <div class="contact-card__item">
+              <span data-i18n="contact.emailLabel">Email</span>
+              <a href="mailto:vcasasus00@gmail.com">vcasasus00@gmail.com</a>
+            </div>
+            <div class="contact-card__item">
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/vcasas00" target="_blank" rel="noreferrer">linkedin.com/in/vcasas00</a>
+            </div>
+            <div class="contact-card__item">
+              <span data-i18n="contact.locationLabel">Location</span>
+              <strong data-i18n="contact.locationValue">Valencia, Spain</strong>
+            </div>
+            <div class="contact-card__actions">
+              <a class="button button--primary" href="mailto:vcasasus00@gmail.com" data-email-action data-i18n="contact.emailButton">Email me</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span data-year></span> <span data-i18n="footer.text">Vicent Casasús Villanova. IT Consultant &amp; Developer.</span></p>
+        <a href="#top" data-i18n="footer.backToTop">Back to top</a>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" data-back-to-top data-i18n-aria-label="aria.backToTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6"/><path d="M12 8v12"/></svg>
+    </button>
+
+    <div class="toast" data-toast role="status" aria-live="polite">Email copied to clipboard</div>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
