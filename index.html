@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Professional portfolio for Vicent Casasús Villanova, IT Consultant and Developer focused on automation, software, BI, AI integrations and enterprise platforms."
+      content="Portfolio profesional de Vicent Casasús Villanova, consultor IT y desarrollador especializado en automatización, software, BI, integraciones de IA y plataformas empresariales."
     />
-    <title>Vicent Casasús Villanova | IT Consultant & Developer</title>
+    <title>Vicent Casasús Villanova | Consultor IT & Desarrollador</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -40,10 +40,34 @@
           role="group"
           aria-label="Language selector"
         >
-          <button class="language-switcher__button" type="button" data-language="en" aria-pressed="true">EN</button>
-          <button class="language-switcher__button" type="button" data-language="es" aria-pressed="false">ES</button>
+          <button class="language-switcher__button" type="button" data-language="en" aria-pressed="false">EN</button>
+          <button class="language-switcher__button is-active" type="button" data-language="es" aria-pressed="true">ES</button>
           <button class="language-switcher__button" type="button" data-language="ca" aria-pressed="false">CA</button>
         </div>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          data-i18n-aria-label="aria.switchToLight"
+          aria-label="Cambiar a modo claro"
+          aria-pressed="false"
+        >
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 14.2A7.8 7.8 0 0 1 9.8 4 8 8 0 1 0 20 14.2Z"></path>
+          </svg>
+        </button>
 
         <button
           class="nav__toggle"

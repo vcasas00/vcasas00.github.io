@@ -1189,3 +1189,112 @@ svg {
     transform: none;
   }
 }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #f7f9fc;
+  --color-bg-soft: #eef3f8;
+  --color-surface: rgba(255, 255, 255, 0.78);
+  --color-surface-strong: #ffffff;
+  --color-card: rgba(255, 255, 255, 0.82);
+  --color-border: rgba(15, 23, 42, 0.12);
+  --color-border-strong: rgba(14, 116, 144, 0.3);
+  --color-text: #0f172a;
+  --color-muted: #526173;
+  --color-soft: #263447;
+  --color-accent: #0f7ad6;
+  --color-accent-strong: #075da8;
+  --color-accent-deep: #0f4c81;
+  --color-cyan: #0891b2;
+  --color-success: #168658;
+  --shadow-soft: 0 24px 70px rgba(15, 23, 42, 0.14);
+  --shadow-card: 0 18px 46px rgba(15, 23, 42, 0.1);
+}
+
+:root[data-theme="light"] body {
+  background:
+    linear-gradient(135deg, rgba(15, 122, 214, 0.1) 0%, transparent 34%),
+    linear-gradient(225deg, rgba(8, 145, 178, 0.08) 0%, transparent 28%),
+    linear-gradient(180deg, #f7f9fc 0%, #eef3f8 48%, #ffffff 100%);
+}
+
+:root[data-theme="light"] body::before {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.045) 1px, transparent 1px);
+}
+
+:root[data-theme="light"] body::after {
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.9));
+}
+
+:root[data-theme="light"] .site-header,
+:root[data-theme="light"] .nav__links,
+:root[data-theme="light"] .language-switcher,
+:root[data-theme="light"] .theme-toggle,
+:root[data-theme="light"] .nav__toggle,
+:root[data-theme="light"] .contact-card,
+:root[data-theme="light"] .toast,
+:root[data-theme="light"] .back-to-top {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+:root[data-theme="light"] .feature-card,
+:root[data-theme="light"] .service-card,
+:root[data-theme="light"] .case-card,
+:root[data-theme="light"] .skill-card,
+:root[data-theme="light"] .timeline-card,
+:root[data-theme="light"] .contact-card,
+:root[data-theme="light"] .hero__metrics div,
+:root[data-theme="light"] .tag-list span {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.7));
+}
+
+:root[data-theme="light"] .visual-card--main,
+:root[data-theme="light"] .visual-node,
+:root[data-theme="light"] .visual-panel {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+:root[data-theme="light"] .hero__visual {
+  background:
+    linear-gradient(135deg, rgba(15, 122, 214, 0.1), transparent 44%),
+    rgba(255, 255, 255, 0.54);
+}
+
+.theme-toggle {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 999px;
+  background: rgba(15, 23, 39, 0.52);
+  color: var(--color-accent-strong);
+  cursor: pointer;
+  transition: color var(--transition), background var(--transition), border-color var(--transition), transform var(--transition);
+  backdrop-filter: blur(14px);
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-border-strong);
+  transform: translateY(-1px);
+}
+
+.theme-toggle__icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
+.theme-toggle__icon--moon,
+:root[data-theme="light"] .theme-toggle__icon--sun {
+  display: none;
+}
+
+:root[data-theme="light"] .theme-toggle__icon--moon {
+  display: block;
+}

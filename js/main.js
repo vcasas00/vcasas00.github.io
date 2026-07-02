@@ -14,6 +14,8 @@ const translations = {
     "aria.technicalIllustration": "Technical systems illustration",
     "aria.contactDetails": "Contact details",
     "aria.backToTop": "Back to top",
+    "aria.switchToLight": "Switch to light mode",
+    "aria.switchToDark": "Switch to dark mode",
     "language.en": "Switch to English",
     "language.es": "Switch to Spanish",
     "language.ca": "Switch to Catalan",
@@ -230,6 +232,8 @@ const translations = {
     "aria.technicalIllustration": "Ilustración de sistemas técnicos",
     "aria.contactDetails": "Datos de contacto",
     "aria.backToTop": "Volver arriba",
+    "aria.switchToLight": "Cambiar a modo claro",
+    "aria.switchToDark": "Cambiar a modo oscuro",
     "language.en": "Cambiar a inglés",
     "language.es": "Cambiar a castellano",
     "language.ca": "Cambiar a catalán",
@@ -452,6 +456,8 @@ const translations = {
     "aria.technicalIllustration": "Il·lustració de sistemes tècnics",
     "aria.contactDetails": "Dades de contacte",
     "aria.backToTop": "Torna amunt",
+    "aria.switchToLight": "Canvia a mode clar",
+    "aria.switchToDark": "Canvia a mode fosc",
     "language.en": "Canvia a l'anglès",
     "language.es": "Canvia al castellà",
     "language.ca": "Canvia al català",
@@ -662,8 +668,9 @@ const translations = {
 };
 
 const supportedLanguages = ["en", "es", "ca"];
-const defaultLanguage = "en";
+const defaultLanguage = "es";
 let currentLanguage = defaultLanguage;
+let currentTheme = "dark";
 let toastTimeoutId;
 
 const loader = document.querySelector("[data-loader]");
@@ -671,6 +678,7 @@ const progressBar = document.querySelector("[data-scroll-progress]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
 const languageButtons = document.querySelectorAll("[data-language]");
+const themeToggle = document.querySelector("[data-theme-toggle]");
 const backToTop = document.querySelector("[data-back-to-top]");
 const emailAction = document.querySelector("[data-email-action]");
 const toast = document.querySelector("[data-toast]");
@@ -678,15 +686,31 @@ const year = document.querySelector("[data-year]");
 
 const getStoredLanguage = () => {
   try {
-    return window.localStorage.getItem("portfolioLanguage");
+    return window.localStorage.getItem("portfolioLanguageV2");
   } catch {
     return null;
   }
 };
 
+
+const getStoredTheme = () => {
+  try {
+    return window.localStorage.getItem("portfolioTheme");
+  } catch {
+    return null;
+  }
+};
+
+const saveTheme = (theme) => {
+  try {
+    window.localStorage.setItem("portfolioTheme", theme);
+  } catch {
+    return;
+  }
+};
 const saveLanguage = (language) => {
   try {
-    window.localStorage.setItem("portfolioLanguage", language);
+    window.localStorage.setItem("portfolioLanguageV2", language);
   } catch {
     return;
   }
@@ -694,6 +718,19 @@ const saveLanguage = (language) => {
 
 const translate = (key) => translations[currentLanguage]?.[key] ?? translations[defaultLanguage][key] ?? key;
 
+
+const updateThemeToggleLabel = () => {
+  const isLight = currentTheme === "light";
+  themeToggle?.setAttribute("aria-label", translate(isLight ? "aria.switchToDark" : "aria.switchToLight"));
+  themeToggle?.setAttribute("aria-pressed", String(isLight));
+};
+
+const applyTheme = (theme) => {
+  currentTheme = theme === "light" ? "light" : "dark";
+  document.documentElement.dataset.theme = currentTheme;
+  updateThemeToggleLabel();
+  saveTheme(currentTheme);
+};
 const updateNavToggleLabel = () => {
   const isOpen = navLinks?.classList.contains("is-open") ?? false;
   navToggle?.setAttribute("aria-label", translate(isOpen ? "aria.closeMenu" : "aria.openMenu"));
@@ -723,6 +760,7 @@ const applyLanguage = (language) => {
   });
 
   updateNavToggleLabel();
+  updateThemeToggleLabel();
   saveLanguage(currentLanguage);
 };
 
@@ -731,6 +769,7 @@ if (year) {
 }
 
 applyLanguage(getStoredLanguage() ?? defaultLanguage);
+applyTheme(getStoredTheme() ?? "dark");
 
 window.addEventListener("load", () => {
   window.setTimeout(() => {
@@ -756,6 +795,10 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     applyLanguage(button.dataset.language);
   });
+});
+
+themeToggle?.addEventListener("click", () => {
+  applyTheme(currentTheme === "light" ? "dark" : "light");
 });
 
 const updateScrollState = () => {
