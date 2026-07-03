@@ -276,8 +276,17 @@
             </p>
           </div>
 
+          <div class="case-filters reveal" data-i18n-aria-label="aria.caseFilters" aria-label="Case study filters">
+            <button class="case-filter is-active" type="button" data-case-filter="all" aria-pressed="true" data-i18n="cases.filterAll">Todos</button>
+            <button class="case-filter" type="button" data-case-filter="bi-data" aria-pressed="false" data-i18n="cases.filterBiData">BI &amp; Datos</button>
+            <button class="case-filter" type="button" data-case-filter="atlassian" aria-pressed="false" data-i18n="cases.filterAtlassian">Atlassian</button>
+            <button class="case-filter" type="button" data-case-filter="automation" aria-pressed="false" data-i18n="cases.filterAutomation">Automatización</button>
+            <button class="case-filter" type="button" data-case-filter="support-it" aria-pressed="false" data-i18n="cases.filterSupportIt">Soporte IT</button>
+            <button class="case-filter" type="button" data-case-filter="cloud" aria-pressed="false" data-i18n="cases.filterCloud">Cloud</button>
+          </div>
+
           <div class="case-grid">
-            <article class="case-card reveal">
+            <article class="case-card reveal" data-case-categories="bi-data">
               <div class="case-card__header">
                 <span class="case-card__client" data-i18n="cases.hospitalityClient">Hospitality Company</span>
                 <h3 data-i18n="cases.hospitalityTitle">Power BI for Hospitality Analytics</h3>
@@ -302,7 +311,7 @@
               </dl>
             </article>
 
-            <article class="case-card reveal">
+            <article class="case-card reveal" data-case-categories="bi-data">
               <div class="case-card__header">
                 <span class="case-card__client" data-i18n="cases.industrialInstallationsClient">Empresa de instalaciones industriales</span>
                 <h3 data-i18n="cases.industrialPowerBiTitle">Acompañamiento y mejora de modelo Power BI</h3>
@@ -327,7 +336,7 @@
               </dl>
             </article>
 
-            <article class="case-card reveal" hidden data-hidden-case="recruitment-cloud">
+            <article class="case-card reveal" data-case-categories="atlassian cloud">
               <div class="case-card__header">
                 <span class="case-card__client" data-i18n="cases.recruitmentClient">Recruitment Company</span>
                 <h3 data-i18n="cases.recruitmentCloudTitle">Atlassian Cloud Migration for Recruitment Operations</h3>
@@ -352,7 +361,7 @@
               </dl>
             </article>
 
-            <article class="case-card reveal">
+            <article class="case-card reveal" data-case-categories="cloud">
               <div class="case-card__header">
                 <span class="case-card__client" data-i18n="cases.roadClient">Road Infrastructure Company</span>
                 <h3 data-i18n="cases.roadCloudTitle">Enterprise Cloud Environment Migration</h3>
@@ -377,7 +386,7 @@
               </dl>
             </article>
 
-            <article class="case-card reveal">
+            <article class="case-card reveal" data-case-categories="atlassian automation">
               <div class="case-card__header">
                 <span class="case-card__client" data-i18n="cases.financialClient">Financial Services Company</span>
                 <h3 data-i18n="cases.jiraAutomationTitle">Jira Automation &amp; Groovy Scripts</h3>
@@ -402,7 +411,7 @@
               </dl>
             </article>
 
-            <article class="case-card reveal">
+            <article class="case-card reveal" data-case-categories="atlassian support-it">
               <div class="case-card__header">
                 <span class="case-card__client" data-i18n="cases.insuranceClient">Insurance Company</span>
                 <h3 data-i18n="cases.insuranceAdminTitle">Atlassian Environment Administration</h3>
@@ -427,7 +436,57 @@
               </dl>
             </article>
 
-            <article class="case-card reveal" hidden data-hidden-case="energy-availability">
+            <article class="case-card reveal" data-case-categories="atlassian support-it">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.publicInternationalClient">Administración pública internacional</span>
+                <h3 data-i18n="cases.publicInternationalAtlassianTitle">Soporte y administración de Atlassian para organismo público</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Reto</dt>
+                  <dd data-i18n="cases.publicInternationalAtlassianChallenge">El organismo necesitaba mantener operativo su entorno Atlassian para equipos internos, asegurando una gestión ordenada de incidencias, accesos, licencias y soporte funcional.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solución</dt>
+                  <dd data-i18n="cases.publicInternationalAtlassianSolution">Presté soporte técnico y funcional sobre Jira Service Management y Confluence, gestionando incidencias, altas y bajas de usuarios, permisos, licencias, configuración del entorno y resolución de necesidades operativas del día a día.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Tecnologías</dt>
+                  <dd data-i18n="cases.publicInternationalAtlassianTechnologies">Jira Service Management, Confluence, Atlassian Cloud, permisos, licencias, soporte funcional</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Impacto en negocio</dt>
+                  <dd data-i18n="cases.publicInternationalAtlassianImpact">El entorno se mantuvo estable y mejor gestionado, facilitando el trabajo diario de los equipos y reduciendo fricción en el uso de las plataformas.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="case-card reveal" data-case-categories="atlassian automation">
+              <div class="case-card__header">
+                <span class="case-card__client" data-i18n="cases.publicRegionalClient">Administración pública regional española</span>
+                <h3 data-i18n="cases.publicRegionalAtlassianTitle">Automatización, scripts e IA aplicada en entorno Atlassian</h3>
+              </div>
+              <dl>
+                <div>
+                  <dt data-i18n="case.challenge">Reto</dt>
+                  <dd data-i18n="cases.publicRegionalAtlassianChallenge">Los equipos necesitaban evolucionar su entorno Atlassian con automatizaciones, mejoras funcionales e integración de soluciones que redujeran tareas manuales y facilitaran el acceso a información.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.solution">Solución</dt>
+                  <dd data-i18n="cases.publicRegionalAtlassianSolution">Trabajé sobre Jira Service Management y Confluence incorporando automatismos, scripts, extensiones y mejoras funcionales. También participé en iniciativas de IA aplicada al entorno Atlassian para facilitar la consulta de documentación y mejorar procesos internos.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.technologies">Tecnologías</dt>
+                  <dd data-i18n="cases.publicRegionalAtlassianTechnologies">Jira Service Management, Confluence, automatizaciones, scripts, extensiones, REST APIs, IA</dd>
+                </div>
+                <div>
+                  <dt data-i18n="case.impact">Impacto en negocio</dt>
+                  <dd data-i18n="cases.publicRegionalAtlassianImpact">Se mejoró la eficiencia operativa del entorno Atlassian, reduciendo tareas repetitivas y facilitando una gestión más ágil de procesos, documentación e incidencias.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="case-card reveal" hidden data-hidden-case="energy-availability" data-case-categories="automation">
               <div class="case-card__header">
                 <span class="case-card__client" data-i18n="cases.energyClient">Energy Industry Company</span>
                 <h3 data-i18n="cases.energyAvailabilityTitle">Custom Machine Availability Control App</h3>
@@ -452,7 +511,7 @@
               </dl>
             </article>
 
-            <article class="case-card reveal">
+            <article class="case-card reveal" data-case-categories="atlassian bi-data">
               <div class="case-card__header">
                 <span class="case-card__client" data-i18n="cases.roadClient">Road Infrastructure Company</span>
                 <h3 data-i18n="cases.jiraReportingTitle">Jira Dashboards &amp; Reporting</h3>
@@ -477,7 +536,7 @@
               </dl>
             </article>
 
-            <article class="case-card reveal">
+            <article class="case-card reveal" hidden data-hidden-case="ngo-it-administration-support" data-case-categories="support-it">
               <div class="case-card__header">
                 <span class="case-card__client" data-i18n="cases.ngoClient">NGO</span>
                 <h3 data-i18n="cases.ngoTitle">NGO IT Administration &amp; Support</h3>

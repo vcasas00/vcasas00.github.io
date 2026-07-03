@@ -12,6 +12,7 @@ const translations = {
     "aria.primaryActions": "Primary actions",
     "aria.focusAreas": "Consulting focus areas",
     "aria.technicalIllustration": "Technical systems illustration",
+    "aria.caseFilters": "Case study filters",
     "aria.contactDetails": "Contact details",
     "aria.backToTop": "Back to top",
     "aria.switchToLight": "Switch to light mode",
@@ -89,6 +90,12 @@ const translations = {
     "case.solution": "Solution",
     "case.technologies": "Technologies",
     "case.impact": "Business impact",
+    "cases.filterAll": "All",
+    "cases.filterBiData": "BI & Data",
+    "cases.filterAtlassian": "Atlassian",
+    "cases.filterAutomation": "Automation",
+    "cases.filterSupportIt": "IT Support",
+    "cases.filterCloud": "Cloud",
     "cases.financialClient": "Financial Services Company",
     "cases.insuranceClient": "Insurance Company",
     "cases.recruitmentClient": "Recruitment Company",
@@ -98,6 +105,8 @@ const translations = {
     "cases.enterpriseClient": "Enterprise Operations Team",
     "cases.energyClient": "Energy Industry Company",
     "cases.industrialInstallationsClient": "Industrial Installations Company",
+    "cases.publicInternationalClient": "International Public Administration",
+    "cases.publicRegionalClient": "Spanish Regional Public Administration",
     "cases.jiraAutomationTitle": "Jira Automation & Groovy Scripts",
     "cases.jiraAutomationChallenge":
       "Manual ticket handling created delays and inconsistent updates across operational teams.",
@@ -119,6 +128,24 @@ const translations = {
       "Administered Jira and Confluence configuration, managed access, supported users and maintained operational documentation.",
     "cases.insuranceAdminImpact":
       "Improved platform governance, reduced user friction and kept delivery teams supported in their daily work.",
+    "cases.publicInternationalAtlassianTitle": "Atlassian Support and Administration for Public Organization",
+    "cases.publicInternationalAtlassianChallenge":
+      "The organization needed to keep its Atlassian environment operational for internal teams, ensuring orderly management of incidents, access, licenses and functional support.",
+    "cases.publicInternationalAtlassianSolution":
+      "Provided technical and functional support for Jira Service Management and Confluence, managing incidents, user onboarding and offboarding, permissions, licenses, environment configuration and day-to-day operational needs.",
+    "cases.publicInternationalAtlassianTechnologies":
+      "Jira Service Management, Confluence, Atlassian Cloud, permissions, licenses, functional support",
+    "cases.publicInternationalAtlassianImpact":
+      "The environment remained stable and better managed, supporting daily team work and reducing friction in the use of the platforms.",
+    "cases.publicRegionalAtlassianTitle": "Automation, Scripts and Applied AI in Atlassian Environment",
+    "cases.publicRegionalAtlassianChallenge":
+      "Teams needed to evolve their Atlassian environment with automations, functional improvements and integrated solutions that reduced manual work and made information easier to access.",
+    "cases.publicRegionalAtlassianSolution":
+      "Worked on Jira Service Management and Confluence by adding automations, scripts, extensions and functional improvements. Also contributed to applied AI initiatives in the Atlassian environment to support documentation search and improve internal processes.",
+    "cases.publicRegionalAtlassianTechnologies":
+      "Jira Service Management, Confluence, automations, scripts, extensions, REST APIs, AI",
+    "cases.publicRegionalAtlassianImpact":
+      "Improved the operational efficiency of the Atlassian environment, reducing repetitive tasks and enabling more agile management of processes, documentation and incidents.",
     "cases.recruitmentCloudTitle": "Atlassian Cloud Migration for Recruitment Operations",
     "cases.recruitmentCloudChallenge":
       "The organization needed to move its Atlassian environment to cloud while preserving operational continuity.",
@@ -249,6 +276,7 @@ const translations = {
     "aria.primaryActions": "Acciones principales",
     "aria.focusAreas": "Áreas de especialización",
     "aria.technicalIllustration": "Ilustración de sistemas técnicos",
+    "aria.caseFilters": "Filtros de casos de estudio",
     "aria.contactDetails": "Datos de contacto",
     "aria.backToTop": "Volver arriba",
     "aria.switchToLight": "Cambiar a modo claro",
@@ -329,6 +357,12 @@ const translations = {
     "case.solution": "Solución",
     "case.technologies": "Tecnologías",
     "case.impact": "Impacto en negocio",
+    "cases.filterAll": "Todos",
+    "cases.filterBiData": "BI & Datos",
+    "cases.filterAtlassian": "Atlassian",
+    "cases.filterAutomation": "Automatización",
+    "cases.filterSupportIt": "Soporte IT",
+    "cases.filterCloud": "Cloud",
     "cases.financialClient": "Empresa de servicios financieros",
     "cases.insuranceClient": "Compañía aseguradora",
     "cases.recruitmentClient": "Empresa de selección de personal",
@@ -338,6 +372,8 @@ const translations = {
     "cases.enterpriseClient": "Equipo de operaciones empresariales",
     "cases.energyClient": "Empresa de la industria energética",
     "cases.industrialInstallationsClient": "Empresa de instalaciones industriales",
+    "cases.publicInternationalClient": "Administración pública internacional",
+    "cases.publicRegionalClient": "Administración pública regional española",
     "cases.jiraAutomationTitle": "Automatización en Jira y scripts Groovy",
     "cases.jiraAutomationChallenge":
       "La gestión manual de tickets generaba retrasos y actualizaciones inconsistentes entre equipos operativos.",
@@ -359,6 +395,24 @@ const translations = {
       "Administración de configuración en Jira y Confluence, gestión de accesos, soporte a usuarios y mantenimiento de documentación operativa.",
     "cases.insuranceAdminImpact":
       "Mejor gobierno de la plataforma, menos fricción para usuarios y soporte continuo para equipos de entrega.",
+    "cases.publicInternationalAtlassianTitle": "Soporte y administración de Atlassian para organismo público",
+    "cases.publicInternationalAtlassianChallenge":
+      "El organismo necesitaba mantener operativo su entorno Atlassian para equipos internos, asegurando una gestión ordenada de incidencias, accesos, licencias y soporte funcional.",
+    "cases.publicInternationalAtlassianSolution":
+      "Presté soporte técnico y funcional sobre Jira Service Management y Confluence, gestionando incidencias, altas y bajas de usuarios, permisos, licencias, configuración del entorno y resolución de necesidades operativas del día a día.",
+    "cases.publicInternationalAtlassianTechnologies":
+      "Jira Service Management, Confluence, Atlassian Cloud, permisos, licencias, soporte funcional",
+    "cases.publicInternationalAtlassianImpact":
+      "El entorno se mantuvo estable y mejor gestionado, facilitando el trabajo diario de los equipos y reduciendo fricción en el uso de las plataformas.",
+    "cases.publicRegionalAtlassianTitle": "Automatización, scripts e IA aplicada en entorno Atlassian",
+    "cases.publicRegionalAtlassianChallenge":
+      "Los equipos necesitaban evolucionar su entorno Atlassian con automatizaciones, mejoras funcionales e integración de soluciones que redujeran tareas manuales y facilitaran el acceso a información.",
+    "cases.publicRegionalAtlassianSolution":
+      "Trabajé sobre Jira Service Management y Confluence incorporando automatismos, scripts, extensiones y mejoras funcionales. También participé en iniciativas de IA aplicada al entorno Atlassian para facilitar la consulta de documentación y mejorar procesos internos.",
+    "cases.publicRegionalAtlassianTechnologies":
+      "Jira Service Management, Confluence, automatizaciones, scripts, extensiones, REST APIs, IA",
+    "cases.publicRegionalAtlassianImpact":
+      "Se mejoró la eficiencia operativa del entorno Atlassian, reduciendo tareas repetitivas y facilitando una gestión más ágil de procesos, documentación e incidencias.",
     "cases.recruitmentCloudTitle": "Migración a Atlassian Cloud para una empresa de selección de personal",
     "cases.recruitmentCloudChallenge":
       "La organización necesitaba trasladar su entorno Atlassian a la nube manteniendo la continuidad operativa.",
@@ -492,6 +546,7 @@ const translations = {
     "aria.primaryActions": "Accions principals",
     "aria.focusAreas": "Àrees d'especialització",
     "aria.technicalIllustration": "Il·lustració de sistemes tècnics",
+    "aria.caseFilters": "Filtres de casos d'estudi",
     "aria.contactDetails": "Dades de contacte",
     "aria.backToTop": "Torna amunt",
     "aria.switchToLight": "Canvia a mode clar",
@@ -572,6 +627,12 @@ const translations = {
     "case.solution": "Solució",
     "case.technologies": "Tecnologies",
     "case.impact": "Impacte de negoci",
+    "cases.filterAll": "Tots",
+    "cases.filterBiData": "BI i dades",
+    "cases.filterAtlassian": "Atlassian",
+    "cases.filterAutomation": "Automatització",
+    "cases.filterSupportIt": "Suport IT",
+    "cases.filterCloud": "Cloud",
     "cases.financialClient": "Empresa de serveis financers",
     "cases.insuranceClient": "Companyia asseguradora",
     "cases.recruitmentClient": "Empresa de selecció de personal",
@@ -581,6 +642,8 @@ const translations = {
     "cases.enterpriseClient": "Equip d'operacions empresarials",
     "cases.energyClient": "Empresa de la indústria energètica",
     "cases.industrialInstallationsClient": "Empresa d'instal·lacions industrials",
+    "cases.publicInternationalClient": "Administració pública internacional",
+    "cases.publicRegionalClient": "Administració pública regional espanyola",
     "cases.jiraAutomationTitle": "Automatització a Jira i scripts Groovy",
     "cases.jiraAutomationChallenge":
       "La gestió manual de tiquets generava retards i actualitzacions inconsistents entre equips operatius.",
@@ -602,6 +665,24 @@ const translations = {
       "Administració de configuració a Jira i Confluence, gestió d'accessos, suport a usuaris i manteniment de documentació operativa.",
     "cases.insuranceAdminImpact":
       "Millor govern de la plataforma, menys fricció per als usuaris i suport continu per als equips d'entrega.",
+    "cases.publicInternationalAtlassianTitle": "Suport i administració d'Atlassian per a organisme públic",
+    "cases.publicInternationalAtlassianChallenge":
+      "L'organisme necessitava mantenir operatiu el seu entorn Atlassian per a equips interns, assegurant una gestió ordenada d'incidències, accessos, llicències i suport funcional.",
+    "cases.publicInternationalAtlassianSolution":
+      "Vaig prestar suport tècnic i funcional sobre Jira Service Management i Confluence, gestionant incidències, altes i baixes d'usuaris, permisos, llicències, configuració de l'entorn i resolució de necessitats operatives del dia a dia.",
+    "cases.publicInternationalAtlassianTechnologies":
+      "Jira Service Management, Confluence, Atlassian Cloud, permisos, llicències, suport funcional",
+    "cases.publicInternationalAtlassianImpact":
+      "L'entorn es va mantenir estable i més ben gestionat, facilitant el treball diari dels equips i reduint fricció en l'ús de les plataformes.",
+    "cases.publicRegionalAtlassianTitle": "Automatització, scripts i IA aplicada en entorn Atlassian",
+    "cases.publicRegionalAtlassianChallenge":
+      "Els equips necessitaven evolucionar el seu entorn Atlassian amb automatitzacions, millores funcionals i integració de solucions que reduïssin tasques manuals i facilitessin l'accés a informació.",
+    "cases.publicRegionalAtlassianSolution":
+      "Vaig treballar sobre Jira Service Management i Confluence incorporant automatismes, scripts, extensions i millores funcionals. També vaig participar en iniciatives d'IA aplicada a l'entorn Atlassian per facilitar la consulta de documentació i millorar processos interns.",
+    "cases.publicRegionalAtlassianTechnologies":
+      "Jira Service Management, Confluence, automatitzacions, scripts, extensions, REST APIs, IA",
+    "cases.publicRegionalAtlassianImpact":
+      "Es va millorar l'eficiència operativa de l'entorn Atlassian, reduint tasques repetitives i facilitant una gestió més àgil de processos, documentació i incidències.",
     "cases.recruitmentCloudTitle": "Migració a Atlassian Cloud per a una empresa de selecció de personal",
     "cases.recruitmentCloudChallenge":
       "L'organització necessitava traslladar el seu entorn Atlassian al núvol mantenint la continuïtat operativa.",
@@ -741,6 +822,8 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
 const languageButtons = document.querySelectorAll("[data-language]");
 const cvLinks = document.querySelectorAll("[data-cv-link]");
+const caseFilterButtons = document.querySelectorAll("[data-case-filter]");
+const caseCards = document.querySelectorAll("[data-case-categories]");
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const backToTop = document.querySelector("[data-back-to-top]");
 const emailAction = document.querySelector("[data-email-action]");
@@ -799,6 +882,21 @@ const updateNavToggleLabel = () => {
   navToggle?.setAttribute("aria-label", translate(isOpen ? "aria.closeMenu" : "aria.openMenu"));
 };
 
+const applyCaseFilter = (filter = "all") => {
+  caseFilterButtons.forEach((button) => {
+    const isActive = button.dataset.caseFilter === filter;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  caseCards.forEach((card) => {
+    const isManualHidden = Boolean(card.dataset.hiddenCase);
+    const categories = card.dataset.caseCategories?.split(" ") ?? [];
+    const shouldShow = !isManualHidden && (filter === "all" || categories.includes(filter));
+    card.hidden = !shouldShow;
+  });
+};
+
 const applyLanguage = (language) => {
   currentLanguage = supportedLanguages.includes(language) ? language : defaultLanguage;
   document.documentElement.lang = currentLanguage;
@@ -838,6 +936,7 @@ if (year) {
 
 applyLanguage(getStoredLanguage() ?? defaultLanguage);
 applyTheme(getStoredTheme() ?? "dark");
+applyCaseFilter("all");
 
 window.addEventListener("load", () => {
   window.setTimeout(() => {
@@ -862,6 +961,12 @@ document.querySelectorAll(".nav__link").forEach((link) => {
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     applyLanguage(button.dataset.language);
+  });
+});
+
+caseFilterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    applyCaseFilter(button.dataset.caseFilter);
   });
 });
 
