@@ -26,21 +26,23 @@ const translations = {
     "nav.experience": "Experience",
     "nav.contact": "Contact",
     "hero.eyebrow": "Independent technical consulting",
-    "hero.role": "IT Consultant & Developer",
+    "hero.role": "IT Consultant · Automation · BI",
     "hero.subtitle":
-      "Helping companies automate processes, build custom software, integrate AI and improve business operations.",
+      "I transform business needs into technology solutions through custom software, automation, Business Intelligence and artificial intelligence.",
     "hero.viewProjects": "View Projects",
     "hero.contact": "Contact",
-    "hero.metricFocusLabel": "Focus",
-    "hero.metricFocusValue": "Automation",
-    "hero.metricDeliveryLabel": "Delivery",
-    "hero.metricDeliveryValue": "Software + BI",
-    "hero.metricPlatformsLabel": "Platforms",
-    "hero.metricPlatformsValue": "Enterprise IT",
+    "hero.metricFocusLabel": "Custom Software",
+    "hero.metricFocusValue": "Applications adapted to the business",
+    "hero.metricDeliveryLabel": "Automation & AI",
+    "hero.metricDeliveryValue": "Faster and more reliable processes",
+    "hero.metricPlatformsLabel": "Business Intelligence",
+    "hero.metricPlatformsValue": "Data for better decisions",
     "about.eyebrow": "About",
     "about.title": "Practical technology for operational teams",
     "about.text":
-      "I design, build and support business technology that reduces manual work, connects systems and gives teams clearer information for everyday decisions.",
+      "I design and develop solutions that help companies automate processes, connect systems and turn data into clearer decisions.",
+    "about.text2":
+      "I work across development, IT consulting, Business Intelligence, applied AI and enterprise platforms, always focused on solving real business needs.",
     "about.cardSoftwareTitle": "Custom Software",
     "about.cardSoftwareText":
       "Internal tools, workflows and integrations built around how the business actually operates.",
@@ -54,25 +56,25 @@ const translations = {
     "services.eyebrow": "What I Do",
     "services.title": "Consulting and development with business context",
     "services.text":
-      "Services are focused on measurable operational improvement: less friction, better visibility and stronger technical foundations.",
+      "Services focused on solving real business needs with practical, clear and maintainable technology.",
     "services.customAppsTitle": "Custom Applications",
     "services.customAppsText":
-      "Build internal applications that simplify workflows, centralize information and reduce dependency on spreadsheets.",
+      "Development of internal tools, web, mobile and desktop applications adapted to real processes.",
     "services.biTitle": "Business Intelligence",
     "services.biText":
-      "Create reporting systems that help teams monitor performance, identify bottlenecks and act with confidence.",
-    "services.aiTitle": "AI Integration",
+      "Dashboards, data models and KPIs for operational monitoring and decision-making.",
+    "services.aiTitle": "Integrations & AI",
     "services.aiText":
-      "Connect AI capabilities to practical use cases such as document handling, support workflows and knowledge access.",
-    "services.atlassianTitle": "Atlassian Consulting",
+      "System connection through APIs, scripts, automations and applied AI for practical use cases.",
+    "services.atlassianTitle": "Atlassian & Platforms",
     "services.atlassianText":
-      "Improve Jira and Confluence setups so delivery teams can track work, automate rules and report clearly.",
+      "Configuration, administration and improvement of Jira, Confluence, Business Central, Microsoft 365 and other corporate platforms.",
     "services.automationTitle": "Process Automation",
     "services.automationText":
-      "Replace repetitive manual tasks with controlled automations that improve speed, consistency and auditability.",
-    "services.supportTitle": "Technical Support",
+      "Design of workflows, rules and scripts to reduce manual tasks and improve traceability.",
+    "services.supportTitle": "Support & Training",
     "services.supportText":
-      "Support users, document systems and train teams so technology remains reliable after implementation.",
+      "Technical guidance, documentation and training for user teams and business areas.",
     "cases.eyebrow": "Case Studies",
     "cases.title": "Problem solving across software, data and platforms",
     "cases.text": "These examples use generic business names and intentionally avoid sensitive client details.",
@@ -244,21 +246,23 @@ const translations = {
     "nav.experience": "Experiencia",
     "nav.contact": "Contacto",
     "hero.eyebrow": "Consultoría técnica independiente",
-    "hero.role": "Consultor IT & Desarrollador",
+    "hero.role": "Consultor IT · Automatización · BI",
     "hero.subtitle":
-      "Ayudo a empresas a automatizar procesos, crear software a medida, integrar IA y mejorar sus operaciones.",
+      "Transformo necesidades de negocio en soluciones tecnológicas mediante software a medida, automatización, Business Intelligence e inteligencia artificial.",
     "hero.viewProjects": "Ver proyectos",
     "hero.contact": "Contacto",
-    "hero.metricFocusLabel": "Enfoque",
-    "hero.metricFocusValue": "Automatización",
-    "hero.metricDeliveryLabel": "Entrega",
-    "hero.metricDeliveryValue": "Software + BI",
-    "hero.metricPlatformsLabel": "Plataformas",
-    "hero.metricPlatformsValue": "IT empresarial",
-    "about.eyebrow": "Sobre mi",
+    "hero.metricFocusLabel": "Software a medida",
+    "hero.metricFocusValue": "Aplicaciones adaptadas al negocio",
+    "hero.metricDeliveryLabel": "Automatización e IA",
+    "hero.metricDeliveryValue": "Procesos más rápidos y fiables",
+    "hero.metricPlatformsLabel": "Business Intelligence",
+    "hero.metricPlatformsValue": "Datos para tomar mejores decisiones",
+    "about.eyebrow": "Sobre mí",
     "about.title": "Tecnología práctica para equipos operativos",
     "about.text":
-      "Diseño, desarrollo y doy soporte a tecnología de negocio que reduce el trabajo manual, conecta sistemas y ofrece información más clara para la toma de decisiones diaria.",
+      "Diseño y desarrollo soluciones que ayudan a empresas a automatizar procesos, conectar sistemas y transformar datos en decisiones más claras.",
+    "about.text2":
+      "Trabajo entre desarrollo, consultoría IT, Business Intelligence, IA aplicada y plataformas empresariales, siempre con foco en resolver necesidades reales del negocio.",
     "about.cardSoftwareTitle": "Software a medida",
     "about.cardSoftwareText":
       "Herramientas internas, flujos de trabajo e integraciones construidas alrededor de cómo opera realmente la empresa.",
@@ -274,25 +278,25 @@ const translations = {
     "services.eyebrow": "Qué hago",
     "services.title": "Consultoría y desarrollo con contexto de negocio",
     "services.text":
-      "Los servicios se centran en mejoras operativas medibles: menos fricción, mejor visibilidad y bases técnicas más sólidas.",
+      "Servicios orientados a resolver necesidades reales de negocio con tecnología práctica, clara y mantenible.",
     "services.customAppsTitle": "Aplicaciones a medida",
     "services.customAppsText":
-      "Construcción de aplicaciones internas que simplifican flujos de trabajo, centralizan información y reducen la dependencia de hojas de cálculo.",
+      "Desarrollo de herramientas internas, aplicaciones web, móviles y de escritorio adaptadas a procesos reales.",
     "services.biTitle": "Inteligencia de negocio",
     "services.biText":
-      "Creación de sistemas de reporting que ayudan a monitorizar rendimiento, detectar cuellos de botella y decidir con confianza.",
-    "services.aiTitle": "Integración de IA",
+      "Dashboards, modelos de datos y KPIs para seguimiento operativo y toma de decisiones.",
+    "services.aiTitle": "Integraciones e IA",
     "services.aiText":
-      "Conexión de capacidades de IA con casos prácticos como gestión documental, soporte y acceso al conocimiento.",
-    "services.atlassianTitle": "Consultoría Atlassian",
+      "Conexión de sistemas mediante APIs, scripts, automatizaciones e IA aplicada a casos prácticos.",
+    "services.atlassianTitle": "Atlassian y plataformas",
     "services.atlassianText":
-      "Mejora de configuraciones de Jira y Confluence para que los equipos puedan seguir el trabajo, automatizar reglas e informar con claridad.",
+      "Configuración, administración y mejora de Jira, Confluence, Business Central, Microsoft 365 y otras plataformas corporativas.",
     "services.automationTitle": "Automatización de procesos",
     "services.automationText":
-      "Sustitución de tareas manuales repetitivas por automatizaciones controladas que mejoran velocidad, consistencia y trazabilidad.",
-    "services.supportTitle": "Soporte técnico",
+      "Diseño de workflows, reglas y scripts para reducir tareas manuales y mejorar trazabilidad.",
+    "services.supportTitle": "Soporte y formación",
     "services.supportText":
-      "Soporte a usuarios, documentación de sistemas y formación para que la tecnología siga siendo fiable tras la implementación.",
+      "Acompañamiento técnico, documentación y formación para equipos usuarios y áreas de negocio.",
     "cases.eyebrow": "Casos de estudio",
     "cases.title": "Resolución de problemas en software, datos y plataformas",
     "cases.text":
@@ -468,21 +472,23 @@ const translations = {
     "nav.experience": "Experiència",
     "nav.contact": "Contacte",
     "hero.eyebrow": "Consultoria tècnica independent",
-    "hero.role": "Consultor IT i Desenvolupador",
+    "hero.role": "Consultor IT · Automatització · BI",
     "hero.subtitle":
-      "Ajudo empreses a automatitzar processos, crear software a mida, integrar IA i millorar les seves operacions.",
+      "Transformo necessitats de negoci en solucions tecnològiques mitjançant software a mida, automatització, Business Intelligence i intel·ligència artificial.",
     "hero.viewProjects": "Veure projectes",
     "hero.contact": "Contacte",
-    "hero.metricFocusLabel": "Focus",
-    "hero.metricFocusValue": "Automatització",
-    "hero.metricDeliveryLabel": "Lliurament",
-    "hero.metricDeliveryValue": "Software + BI",
-    "hero.metricPlatformsLabel": "Plataformes",
-    "hero.metricPlatformsValue": "IT empresarial",
+    "hero.metricFocusLabel": "Software a mida",
+    "hero.metricFocusValue": "Aplicacions adaptades al negoci",
+    "hero.metricDeliveryLabel": "Automatització i IA",
+    "hero.metricDeliveryValue": "Processos més ràpids i fiables",
+    "hero.metricPlatformsLabel": "Business Intelligence",
+    "hero.metricPlatformsValue": "Dades per prendre millors decisions",
     "about.eyebrow": "Sobre mi",
     "about.title": "Tecnologia pràctica per a equips operatius",
     "about.text":
-      "Dissenyo, desenvolupo i dono suport a tecnologia de negoci que redueix la feina manual, connecta sistemes i ofereix informació més clara per a les decisions del dia a dia.",
+      "Dissenyo i desenvolupo solucions que ajuden empreses a automatitzar processos, connectar sistemes i transformar dades en decisions més clares.",
+    "about.text2":
+      "Treballo entre desenvolupament, consultoria IT, Business Intelligence, IA aplicada i plataformes empresarials, sempre amb focus a resoldre necessitats reals del negoci.",
     "about.cardSoftwareTitle": "Software a mida",
     "about.cardSoftwareText":
       "Eines internes, fluxos de treball i integracions construïdes al voltant de com opera realment l'empresa.",
@@ -498,25 +504,25 @@ const translations = {
     "services.eyebrow": "Què faig",
     "services.title": "Consultoria i desenvolupament amb context de negoci",
     "services.text":
-      "Els serveis se centren en millores operatives mesurables: menys fricció, millor visibilitat i bases tècniques més sòlides.",
+      "Serveis orientats a resoldre necessitats reals de negoci amb tecnologia pràctica, clara i mantenible.",
     "services.customAppsTitle": "Aplicacions a mida",
     "services.customAppsText":
-      "Construcció d'aplicacions internes que simplifiquen fluxos de treball, centralitzen informació i redueixen la dependència de fulls de càlcul.",
+      "Desenvolupament d'eines internes, aplicacions web, mòbils i d'escriptori adaptades a processos reals.",
     "services.biTitle": "Intel·ligència de negoci",
     "services.biText":
-      "Creació de sistemes de reporting que ajuden els equips a monitorar rendiment, detectar colls d'ampolla i decidir amb confiança.",
-    "services.aiTitle": "Integració d'IA",
+      "Dashboards, models de dades i KPIs per al seguiment operatiu i la presa de decisions.",
+    "services.aiTitle": "Integracions i IA",
     "services.aiText":
-      "Connexió de capacitats d'IA amb casos pràctics com gestió documental, suport i accés al coneixement.",
-    "services.atlassianTitle": "Consultoria Atlassian",
+      "Connexió de sistemes mitjançant APIs, scripts, automatitzacions i IA aplicada a casos pràctics.",
+    "services.atlassianTitle": "Atlassian i plataformes",
     "services.atlassianText":
-      "Millora de configuracions de Jira i Confluence perquè els equips puguin seguir el treball, automatitzar regles i informar amb claredat.",
+      "Configuració, administració i millora de Jira, Confluence, Business Central, Microsoft 365 i altres plataformes corporatives.",
     "services.automationTitle": "Automatització de processos",
     "services.automationText":
-      "Substitució de tasques manuals repetitives per automatitzacions controlades que milloren velocitat, consistència i traçabilitat.",
-    "services.supportTitle": "Suport tècnic",
+      "Disseny de workflows, regles i scripts per reduir tasques manuals i millorar la traçabilitat.",
+    "services.supportTitle": "Suport i formació",
     "services.supportText":
-      "Suport a usuaris, documentació de sistemes i formació perquè la tecnologia continuï sent fiable després de la implementació.",
+      "Acompanyament tècnic, documentació i formació per a equips usuaris i àrees de negoci.",
     "cases.eyebrow": "Casos d'estudi",
     "cases.title": "Resolució de problemes en software, dades i plataformes",
     "cases.text":
