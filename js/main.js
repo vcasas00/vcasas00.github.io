@@ -97,6 +97,7 @@ const translations = {
     "cases.ngoClient": "NGO",
     "cases.enterpriseClient": "Enterprise Operations Team",
     "cases.energyClient": "Energy Industry Company",
+    "cases.industrialInstallationsClient": "Industrial Installations Company",
     "cases.jiraAutomationTitle": "Jira Automation & Groovy Scripts",
     "cases.jiraAutomationChallenge":
       "Manual ticket handling created delays and inconsistent updates across operational teams.",
@@ -132,6 +133,14 @@ const translations = {
       "Built a consolidated data model and dashboards for revenue, occupancy and operations review.",
     "cases.hospitalityImpact":
       "Enabled faster reporting cycles and clearer visibility into operational trends.",
+    "cases.industrialPowerBiTitle": "Power BI Model Guidance and Improvement",
+    "cases.industrialPowerBiChallenge":
+      "The company already had a Power BI development, but needed technical guidance to improve its structure, simplify maintenance and make decisions about licensing and next steps.",
+    "cases.industrialPowerBiSolution":
+      "Analyzed the existing model, proposed improvements to data organization, visualizations and report usability, and supported the team in defining a roadmap for evolution, publishing and Power BI licensing.",
+    "cases.industrialPowerBiTechnologies": "Power BI, Power Query, DAX, data modeling, Microsoft licensing",
+    "cases.industrialPowerBiImpact":
+      "The team gained a clearer view of the project status, actionable improvements for the existing report and criteria to continue development on a more organized and maintainable base.",
     "cases.roadCloudTitle": "Enterprise Cloud Environment Migration",
     "cases.roadCloudChallenge":
       "The company needed to modernize its business environment and move key tools and data to cloud services.",
@@ -328,6 +337,7 @@ const translations = {
     "cases.ngoClient": "ONG",
     "cases.enterpriseClient": "Equipo de operaciones empresariales",
     "cases.energyClient": "Empresa de la industria energética",
+    "cases.industrialInstallationsClient": "Empresa de instalaciones industriales",
     "cases.jiraAutomationTitle": "Automatización en Jira y scripts Groovy",
     "cases.jiraAutomationChallenge":
       "La gestión manual de tickets generaba retrasos y actualizaciones inconsistentes entre equipos operativos.",
@@ -363,6 +373,14 @@ const translations = {
       "Construcción de un modelo de datos consolidado y dashboards para revisar ingresos, ocupación y operaciones.",
     "cases.hospitalityImpact":
       "Ciclos de reporting más rápidos y mayor visibilidad sobre tendencias operativas.",
+    "cases.industrialPowerBiTitle": "Acompañamiento y mejora de modelo Power BI",
+    "cases.industrialPowerBiChallenge":
+      "La empresa ya disponía de un desarrollo en Power BI, pero necesitaba orientación técnica para mejorar su estructura, facilitar su mantenimiento y tomar decisiones sobre licencias y próximos pasos.",
+    "cases.industrialPowerBiSolution":
+      "Analicé el modelo existente, propuse mejoras en la organización de datos, visualizaciones y usabilidad del informe, y acompañé al equipo en la definición de una hoja de ruta para evolución, publicación y licenciamiento de Power BI.",
+    "cases.industrialPowerBiTechnologies": "Power BI, Power Query, DAX, modelado de datos, licencias Microsoft",
+    "cases.industrialPowerBiImpact":
+      "El equipo obtuvo una visión más clara del estado del proyecto, mejoras aplicables sobre el informe existente y criterios para continuar el desarrollo con una base más ordenada y mantenible.",
     "cases.roadCloudTitle": "Migración cloud del entorno empresarial",
     "cases.roadCloudChallenge":
       "La empresa necesitaba modernizar su entorno de negocio y trasladar herramientas y datos clave a servicios en la nube.",
@@ -562,6 +580,7 @@ const translations = {
     "cases.ngoClient": "ONG",
     "cases.enterpriseClient": "Equip d'operacions empresarials",
     "cases.energyClient": "Empresa de la indústria energètica",
+    "cases.industrialInstallationsClient": "Empresa d'instal·lacions industrials",
     "cases.jiraAutomationTitle": "Automatització a Jira i scripts Groovy",
     "cases.jiraAutomationChallenge":
       "La gestió manual de tiquets generava retards i actualitzacions inconsistents entre equips operatius.",
@@ -597,6 +616,14 @@ const translations = {
       "Construcció d'un model de dades consolidat i dashboards per revisar ingressos, ocupació i operacions.",
     "cases.hospitalityImpact":
       "Cicles de reporting més ràpids i més visibilitat sobre tendències operatives.",
+    "cases.industrialPowerBiTitle": "Acompanyament i millora de model Power BI",
+    "cases.industrialPowerBiChallenge":
+      "L'empresa ja disposava d'un desenvolupament en Power BI, però necessitava orientació tècnica per millorar-ne l'estructura, facilitar-ne el manteniment i prendre decisions sobre llicències i propers passos.",
+    "cases.industrialPowerBiSolution":
+      "Vaig analitzar el model existent, vaig proposar millores en l'organització de dades, visualitzacions i usabilitat de l'informe, i vaig acompanyar l'equip en la definició d'un full de ruta per a evolució, publicació i llicenciament de Power BI.",
+    "cases.industrialPowerBiTechnologies": "Power BI, Power Query, DAX, modelatge de dades, llicències Microsoft",
+    "cases.industrialPowerBiImpact":
+      "L'equip va obtenir una visió més clara de l'estat del projecte, millores aplicables sobre l'informe existent i criteris per continuar el desenvolupament amb una base més ordenada i mantenible.",
     "cases.roadCloudTitle": "Migració cloud de l'entorn empresarial",
     "cases.roadCloudChallenge":
       "L'empresa necessitava modernitzar el seu entorn de negoci i traslladar eines i dades clau a serveis al núvol.",
