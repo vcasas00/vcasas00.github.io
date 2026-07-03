@@ -30,6 +30,7 @@ const translations = {
     "hero.subtitle":
       "I transform business needs into technology solutions through custom software, automation, Business Intelligence and artificial intelligence.",
     "hero.viewProjects": "View Projects",
+    "hero.downloadCv": "Download CV",
     "hero.contact": "Contact",
     "hero.metricFocusLabel": "Custom Software",
     "hero.metricFocusValue": "Applications adapted to the business",
@@ -165,9 +166,9 @@ const translations = {
     "cases.enterpriseSupportImpact":
       "Improved platform reliability and reduced friction between technical and business teams.",
     "skills.eyebrow": "Skills",
-    "skills.title": "A cross-functional technical toolkit",
+    "skills.title": "Cross-functional technical stack",
     "skills.text":
-      "Skills are grouped by delivery area instead of progress bars, because professional capability depends on context, ownership and outcomes.",
+      "Technologies and platforms I use to develop solutions, automate processes, integrate systems and turn data into useful information.",
     "skills.development": "Development",
     "skills.technologies": "Technologies",
     "skills.bi": "Business Intelligence",
@@ -220,6 +221,7 @@ const translations = {
     "contact.locationLabel": "Location",
     "contact.locationValue": "Valencia, Spain",
     "contact.emailButton": "Email me",
+    "contact.cvButton": "Download CV",
     "footer.text": "Vicent Casasús Villanova. IT Consultant & Developer.",
     "footer.backToTop": "Back to top",
     "toast.emailCopied": "Email copied:",
@@ -256,6 +258,7 @@ const translations = {
     "hero.subtitle":
       "Transformo necesidades de negocio en soluciones tecnológicas mediante software a medida, automatización, Business Intelligence e inteligencia artificial.",
     "hero.viewProjects": "Ver proyectos",
+    "hero.downloadCv": "Descargar CV",
     "hero.contact": "Contacto",
     "hero.metricFocusLabel": "Software a medida",
     "hero.metricFocusValue": "Aplicaciones adaptadas al negocio",
@@ -396,9 +399,9 @@ const translations = {
     "cases.enterpriseSupportImpact":
       "Mayor fiabilidad de plataforma y menos fricción entre equipos técnicos y de negocio.",
     "skills.eyebrow": "Competencias",
-    "skills.title": "Un conjunto técnico transversal",
+    "skills.title": "Stack técnico transversal",
     "skills.text":
-      "Las competencias se agrupan por área de entrega en lugar de barras de progreso, porque la capacidad profesional depende del contexto, la responsabilidad y los resultados.",
+      "Tecnologías y plataformas que utilizo para desarrollar soluciones, automatizar procesos, integrar sistemas y convertir datos en información útil.",
     "skills.development": "Desarrollo",
     "skills.technologies": "Tecnologías",
     "skills.bi": "Inteligencia de negocio",
@@ -452,6 +455,7 @@ const translations = {
     "contact.locationLabel": "Ubicación",
     "contact.locationValue": "Valencia, España",
     "contact.emailButton": "Enviar email",
+    "contact.cvButton": "Descargar CV",
     "footer.text": "Vicent Casasús Villanova. Consultor IT & Desarrollador.",
     "footer.backToTop": "Volver arriba",
     "toast.emailCopied": "Email copiado:",
@@ -488,6 +492,7 @@ const translations = {
     "hero.subtitle":
       "Transformo necessitats de negoci en solucions tecnològiques mitjançant software a mida, automatització, Business Intelligence i intel·ligència artificial.",
     "hero.viewProjects": "Veure projectes",
+    "hero.downloadCv": "Descarregar CV",
     "hero.contact": "Contacte",
     "hero.metricFocusLabel": "Software a mida",
     "hero.metricFocusValue": "Aplicacions adaptades al negoci",
@@ -628,9 +633,9 @@ const translations = {
     "cases.enterpriseSupportImpact":
       "Més fiabilitat de plataforma i menys fricció entre equips tècnics i de negoci.",
     "skills.eyebrow": "Competències",
-    "skills.title": "Un conjunt tècnic transversal",
+    "skills.title": "Stack tècnic transversal",
     "skills.text":
-      "Les competències s'agrupen per àrea d'entrega en lloc de barres de progrés, perquè la capacitat professional depèn del context, la responsabilitat i els resultats.",
+      "Tecnologies i plataformes que utilitzo per desenvolupar solucions, automatitzar processos, integrar sistemes i convertir dades en informació útil.",
     "skills.development": "Desenvolupament",
     "skills.technologies": "Tecnologies",
     "skills.bi": "Intel·ligència de negoci",
@@ -684,6 +689,7 @@ const translations = {
     "contact.locationLabel": "Ubicació",
     "contact.locationValue": "València, Espanya",
     "contact.emailButton": "Envia'm un email",
+    "contact.cvButton": "Descarregar CV",
     "footer.text": "Vicent Casasús Villanova. Consultor IT i Desenvolupador.",
     "footer.backToTop": "Torna amunt",
     "toast.emailCopied": "Email copiat:",
@@ -693,6 +699,11 @@ const translations = {
 
 const supportedLanguages = ["en", "es", "ca"];
 const defaultLanguage = "es";
+const cvFiles = {
+  en: "assets/CV_VicentCasasus26E.pdf",
+  es: "assets/CV_VicentCasasus26.pdf",
+  ca: "assets/CV_VicentCasasus26.pdf",
+};
 let currentLanguage = defaultLanguage;
 let currentTheme = "dark";
 let toastTimeoutId;
@@ -702,6 +713,7 @@ const progressBar = document.querySelector("[data-scroll-progress]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
 const languageButtons = document.querySelectorAll("[data-language]");
+const cvLinks = document.querySelectorAll("[data-cv-link]");
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const backToTop = document.querySelector("[data-back-to-top]");
 const emailAction = document.querySelector("[data-email-action]");
@@ -776,6 +788,11 @@ const applyLanguage = (language) => {
     element.setAttribute("aria-label", translate(element.dataset.i18nAriaLabel));
   });
 
+  const currentCv = cvFiles[currentLanguage] ?? cvFiles[defaultLanguage];
+  cvLinks.forEach((link) => {
+    link.setAttribute("href", currentCv);
+  });
+
   languageButtons.forEach((button) => {
     const isActive = button.dataset.language === currentLanguage;
     button.classList.toggle("is-active", isActive);
@@ -842,6 +859,13 @@ updateScrollState();
 
 backToTop?.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+document.querySelectorAll('a[href="#top"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
 
 const showToast = (message) => {
