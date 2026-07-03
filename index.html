@@ -8,6 +8,7 @@
       content="Portfolio profesional de Vicent Casasús Villanova, consultor IT y desarrollador especializado en automatización, software, BI, integraciones de IA y plataformas empresariales."
     />
     <title>Vicent Casasús Villanova | Consultor IT & Desarrollador</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -20,7 +21,9 @@
     <header class="site-header" id="top">
       <nav class="nav container" data-i18n-aria-label="aria.primaryNavigation" aria-label="Primary navigation">
         <a class="nav__brand" href="#top" data-i18n-aria-label="aria.home" aria-label="Vicent Casasús Villanova home">
-          <span class="nav__mark">VC</span>
+          <span class="nav__mark" aria-hidden="true">
+            <img src="assets/logo-vc.svg" alt="" />
+          </span>
           <span>Vicent Casasús</span>
         </a>
 
@@ -129,21 +132,34 @@
                 <span></span>
               </div>
               <div class="visual-card__body">
+                <span class="visual-card__label" data-i18n="visual.inputLabel">Necesidad de negocio</span>
                 <div class="code-line code-line--wide"></div>
                 <div class="code-line"></div>
                 <div class="code-line code-line--short"></div>
+                <div class="visual-card__flow">
+                  <span data-i18n="visual.systemsLabel">Sistemas</span>
+                  <span data-i18n="visual.automationLabel">Automatización</span>
+                  <span data-i18n="visual.decisionsLabel">Decisiones</span>
+                </div>
               </div>
             </div>
             <div class="visual-node visual-node--one">
-              <span>AI</span>
+              <span>Software</span>
             </div>
             <div class="visual-node visual-node--two">
-              <span>BI</span>
+              <span>Data</span>
             </div>
             <div class="visual-node visual-node--three">
-              <span>Ops</span>
+              <span>AI</span>
             </div>
+            <div class="visual-connector visual-connector--one" aria-hidden="true"></div>
+            <div class="visual-connector visual-connector--two" aria-hidden="true"></div>
+            <div class="visual-connector visual-connector--three" aria-hidden="true"></div>
             <div class="visual-panel">
+              <div class="visual-panel__heading">
+                <span data-i18n="visual.processLabel">Proceso conectado</span>
+                <span class="visual-panel__status" data-i18n="visual.statusLabel">Activo</span>
+              </div>
               <div class="visual-panel__bar"></div>
               <div class="visual-panel__row">
                 <span></span>
@@ -177,32 +193,32 @@
               <span class="card-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5z"/><path d="m8 12 2 2 5-5"/></svg>
               </span>
-              <h3 data-i18n="about.cardSoftwareTitle">Custom Software</h3>
-              <p data-i18n="about.cardSoftwareText">Internal tools, workflows and integrations built around how the business actually operates.</p>
+              <h3 data-i18n="about.cardSoftwareTitle">Visión de negocio</h3>
+              <p data-i18n="about.cardSoftwareText">Entender el contexto, las prioridades y el impacto antes de proponer una solución técnica.</p>
             </article>
 
             <article class="feature-card reveal">
               <span class="card-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M5 19V5"/><path d="M5 19h14"/><path d="M9 16v-5"/><path d="M13 16V8"/><path d="M17 16v-7"/></svg>
               </span>
-              <h3 data-i18n="about.cardBiTitle">Business Intelligence</h3>
-              <p data-i18n="about.cardBiText">Dashboards and reporting models that turn fragmented operational data into usable insight.</p>
+              <h3 data-i18n="about.cardBiTitle">Soluciones prácticas</h3>
+              <p data-i18n="about.cardBiText">Construir herramientas claras, mantenibles y adaptadas a la forma real de trabajar de cada equipo.</p>
             </article>
 
             <article class="feature-card reveal">
               <span class="card-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M12 3v4"/><path d="M12 17v4"/><path d="M3 12h4"/><path d="M17 12h4"/><path d="M7.8 7.8 5 5"/><path d="m19 19-2.8-2.8"/><path d="m16.2 7.8 2.8-2.8"/><path d="M5 19l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
               </span>
-              <h3 data-i18n="about.cardAutomationTitle">Automation</h3>
-              <p data-i18n="about.cardAutomationText">Reliable process automation that removes repetitive tasks and improves response times.</p>
+              <h3 data-i18n="about.cardAutomationTitle">Integración técnica</h3>
+              <p data-i18n="about.cardAutomationText">Conectar aplicaciones, datos y procesos para que los sistemas trabajen mejor entre sí.</p>
             </article>
 
             <article class="feature-card reveal">
               <span class="card-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M4 6.5 12 3l8 3.5-8 3.5z"/><path d="M4 12.5 12 16l8-3.5"/><path d="M4 17.5 12 21l8-3.5"/></svg>
               </span>
-              <h3 data-i18n="about.cardPlatformsTitle">Enterprise Platforms</h3>
-              <p data-i18n="about.cardPlatformsText">Configuration, administration and support for platforms used by technical and business teams.</p>
+              <h3 data-i18n="about.cardPlatformsTitle">Acompañamiento continuo</h3>
+              <p data-i18n="about.cardPlatformsText">Aportar soporte, documentación y formación para que las soluciones funcionen más allá de la entrega inicial.</p>
             </article>
           </div>
         </div>
@@ -568,7 +584,7 @@
         <div class="container contact-grid">
           <div class="section-heading reveal">
             <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
-            <h2 id="contact-title" data-i18n="contact.title">Let us discuss your next technical improvement</h2>
+            <h2 id="contact-title" data-i18n="contact.title">Hablemos de tu próxima mejora técnica</h2>
             <p data-i18n="contact.text">
               Available for consulting, automation, reporting and platform improvement projects.
             </p>

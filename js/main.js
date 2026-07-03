@@ -37,22 +37,28 @@ const translations = {
     "hero.metricDeliveryValue": "Faster and more reliable processes",
     "hero.metricPlatformsLabel": "Business Intelligence",
     "hero.metricPlatformsValue": "Data for better decisions",
+    "visual.inputLabel": "Business need",
+    "visual.systemsLabel": "Systems",
+    "visual.automationLabel": "Automation",
+    "visual.decisionsLabel": "Decisions",
+    "visual.processLabel": "Connected process",
+    "visual.statusLabel": "Live",
     "about.eyebrow": "About",
     "about.title": "Practical technology for operational teams",
     "about.text":
       "I design and develop solutions that help companies automate processes, connect systems and turn data into clearer decisions.",
     "about.text2":
       "I work across development, IT consulting, Business Intelligence, applied AI and enterprise platforms, always focused on solving real business needs.",
-    "about.cardSoftwareTitle": "Custom Software",
+    "about.cardSoftwareTitle": "Business Vision",
     "about.cardSoftwareText":
-      "Internal tools, workflows and integrations built around how the business actually operates.",
-    "about.cardBiTitle": "Business Intelligence",
-    "about.cardBiText": "Dashboards and reporting models that turn fragmented operational data into usable insight.",
-    "about.cardAutomationTitle": "Automation",
-    "about.cardAutomationText": "Reliable process automation that removes repetitive tasks and improves response times.",
-    "about.cardPlatformsTitle": "Enterprise Platforms",
+      "Understanding context, priorities and impact before proposing a technical solution.",
+    "about.cardBiTitle": "Practical Solutions",
+    "about.cardBiText": "Building clear, maintainable tools adapted to the real way each team works.",
+    "about.cardAutomationTitle": "Technical Integration",
+    "about.cardAutomationText": "Connecting applications, data and processes so systems work better together.",
+    "about.cardPlatformsTitle": "Continuous Support",
     "about.cardPlatformsText":
-      "Configuration, administration and support for platforms used by technical and business teams.",
+      "Providing support, documentation and training so solutions keep working beyond initial delivery.",
     "services.eyebrow": "What I Do",
     "services.title": "Consulting and development with business context",
     "services.text":
@@ -208,7 +214,7 @@ const translations = {
     "timeline.technicianText":
       "Resolving incidents, maintaining equipment and helping users work effectively with business systems.",
     "contact.eyebrow": "Contact",
-    "contact.title": "Let us discuss your next technical improvement",
+    "contact.title": "Let’s discuss your next technical improvement",
     "contact.text": "Available for consulting, automation, reporting and platform improvement projects.",
     "contact.emailLabel": "Email",
     "contact.locationLabel": "Location",
@@ -257,24 +263,30 @@ const translations = {
     "hero.metricDeliveryValue": "Procesos más rápidos y fiables",
     "hero.metricPlatformsLabel": "Business Intelligence",
     "hero.metricPlatformsValue": "Datos para tomar mejores decisiones",
+    "visual.inputLabel": "Necesidad de negocio",
+    "visual.systemsLabel": "Sistemas",
+    "visual.automationLabel": "Automatización",
+    "visual.decisionsLabel": "Decisiones",
+    "visual.processLabel": "Proceso conectado",
+    "visual.statusLabel": "Activo",
     "about.eyebrow": "Sobre mí",
     "about.title": "Tecnología práctica para equipos operativos",
     "about.text":
       "Diseño y desarrollo soluciones que ayudan a empresas a automatizar procesos, conectar sistemas y transformar datos en decisiones más claras.",
     "about.text2":
       "Trabajo entre desarrollo, consultoría IT, Business Intelligence, IA aplicada y plataformas empresariales, siempre con foco en resolver necesidades reales del negocio.",
-    "about.cardSoftwareTitle": "Software a medida",
+    "about.cardSoftwareTitle": "Visión de negocio",
     "about.cardSoftwareText":
-      "Herramientas internas, flujos de trabajo e integraciones construidas alrededor de cómo opera realmente la empresa.",
-    "about.cardBiTitle": "Inteligencia de negocio",
+      "Entender el contexto, las prioridades y el impacto antes de proponer una solución técnica.",
+    "about.cardBiTitle": "Soluciones prácticas",
     "about.cardBiText":
-      "Cuadros de mando y modelos de reporting que convierten datos operativos dispersos en información útil.",
-    "about.cardAutomationTitle": "Automatización",
+      "Construir herramientas claras, mantenibles y adaptadas a la forma real de trabajar de cada equipo.",
+    "about.cardAutomationTitle": "Integración técnica",
     "about.cardAutomationText":
-      "Automatización fiable de procesos para eliminar tareas repetitivas y mejorar los tiempos de respuesta.",
-    "about.cardPlatformsTitle": "Plataformas empresariales",
+      "Conectar aplicaciones, datos y procesos para que los sistemas trabajen mejor entre sí.",
+    "about.cardPlatformsTitle": "Acompañamiento continuo",
     "about.cardPlatformsText":
-      "Configuración, administración y soporte de plataformas utilizadas por equipos técnicos y de negocio.",
+      "Aportar soporte, documentación y formación para que las soluciones funcionen más allá de la entrega inicial.",
     "services.eyebrow": "Qué hago",
     "services.title": "Consultoría y desarrollo con contexto de negocio",
     "services.text":
@@ -483,24 +495,30 @@ const translations = {
     "hero.metricDeliveryValue": "Processos més ràpids i fiables",
     "hero.metricPlatformsLabel": "Business Intelligence",
     "hero.metricPlatformsValue": "Dades per prendre millors decisions",
+    "visual.inputLabel": "Necessitat de negoci",
+    "visual.systemsLabel": "Sistemes",
+    "visual.automationLabel": "Automatització",
+    "visual.decisionsLabel": "Decisions",
+    "visual.processLabel": "Procés connectat",
+    "visual.statusLabel": "Actiu",
     "about.eyebrow": "Sobre mi",
     "about.title": "Tecnologia pràctica per a equips operatius",
     "about.text":
       "Dissenyo i desenvolupo solucions que ajuden empreses a automatitzar processos, connectar sistemes i transformar dades en decisions més clares.",
     "about.text2":
       "Treballo entre desenvolupament, consultoria IT, Business Intelligence, IA aplicada i plataformes empresarials, sempre amb focus a resoldre necessitats reals del negoci.",
-    "about.cardSoftwareTitle": "Software a mida",
+    "about.cardSoftwareTitle": "Visió de negoci",
     "about.cardSoftwareText":
-      "Eines internes, fluxos de treball i integracions construïdes al voltant de com opera realment l'empresa.",
-    "about.cardBiTitle": "Intel·ligència de negoci",
+      "Entendre el context, les prioritats i l'impacte abans de proposar una solució tècnica.",
+    "about.cardBiTitle": "Solucions pràctiques",
     "about.cardBiText":
-      "Quadres de comandament i models de reporting que converteixen dades operatives disperses en informació útil.",
-    "about.cardAutomationTitle": "Automatització",
+      "Construir eines clares, mantenibles i adaptades a la manera real de treballar de cada equip.",
+    "about.cardAutomationTitle": "Integració tècnica",
     "about.cardAutomationText":
-      "Automatització fiable de processos per eliminar tasques repetitives i millorar els temps de resposta.",
-    "about.cardPlatformsTitle": "Plataformes empresarials",
+      "Connectar aplicacions, dades i processos perquè els sistemes treballin millor entre si.",
+    "about.cardPlatformsTitle": "Acompanyament continu",
     "about.cardPlatformsText":
-      "Configuració, administració i suport de plataformes utilitzades per equips tècnics i de negoci.",
+      "Aportar suport, documentació i formació perquè les solucions funcionin més enllà de l'entrega inicial.",
     "services.eyebrow": "Què faig",
     "services.title": "Consultoria i desenvolupament amb context de negoci",
     "services.text":
