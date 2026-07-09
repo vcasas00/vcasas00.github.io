@@ -96,6 +96,8 @@ const translations = {
     "cases.filterAutomation": "Automation",
     "cases.filterSupportIt": "IT Support",
     "cases.filterCloud": "Cloud",
+    "cases.readMore": "Read more",
+    "cases.readLess": "Read less",
     "cases.financialClient": "Financial Services Company",
     "cases.insuranceClient": "Insurance Company",
     "cases.recruitmentClient": "Recruitment Company",
@@ -363,6 +365,8 @@ const translations = {
     "cases.filterAutomation": "Automatización",
     "cases.filterSupportIt": "Soporte IT",
     "cases.filterCloud": "Cloud",
+    "cases.readMore": "Leer más",
+    "cases.readLess": "Leer menos",
     "cases.financialClient": "Empresa de servicios financieros",
     "cases.insuranceClient": "Compañía aseguradora",
     "cases.recruitmentClient": "Empresa de selección de personal",
@@ -633,6 +637,8 @@ const translations = {
     "cases.filterAutomation": "Automatització",
     "cases.filterSupportIt": "Suport IT",
     "cases.filterCloud": "Cloud",
+    "cases.readMore": "Llegir més",
+    "cases.readLess": "Llegir menys",
     "cases.financialClient": "Empresa de serveis financers",
     "cases.insuranceClient": "Companyia asseguradora",
     "cases.recruitmentClient": "Empresa de selecció de personal",
@@ -882,6 +888,47 @@ const updateNavToggleLabel = () => {
   navToggle?.setAttribute("aria-label", translate(isOpen ? "aria.closeMenu" : "aria.openMenu"));
 };
 
+const updateCaseToggleLabels = () => {
+  caseCards.forEach((card) => {
+    const button = card.querySelector("[data-case-toggle]");
+    if (!button) return;
+
+    const isExpanded = card.classList.contains("is-expanded");
+    button.textContent = translate(isExpanded ? "cases.readLess" : "cases.readMore");
+    button.setAttribute("aria-expanded", String(isExpanded));
+  });
+};
+
+const setupCaseToggles = () => {
+  caseCards.forEach((card, index) => {
+    const details = card.querySelector("dl");
+    if (!details || card.querySelector("[data-case-toggle]")) return;
+
+    const detailsId = `case-details-${index + 1}`;
+    details.id = detailsId;
+
+    const actions = document.createElement("div");
+    actions.className = "case-card__actions";
+
+    const button = document.createElement("button");
+    button.className = "case-card__toggle";
+    button.type = "button";
+    button.dataset.caseToggle = "";
+    button.setAttribute("aria-controls", detailsId);
+    button.setAttribute("aria-expanded", "false");
+
+    button.addEventListener("click", () => {
+      card.classList.toggle("is-expanded");
+      updateCaseToggleLabels();
+    });
+
+    actions.append(button);
+    card.append(actions);
+  });
+
+  updateCaseToggleLabels();
+};
+
 const applyCaseFilter = (filter = "all") => {
   caseFilterButtons.forEach((button) => {
     const isActive = button.dataset.caseFilter === filter;
@@ -925,6 +972,7 @@ const applyLanguage = (language) => {
     button.setAttribute("aria-label", translate(`language.${button.dataset.language}`));
   });
 
+  updateCaseToggleLabels();
   updateNavToggleLabel();
   updateThemeToggleLabel();
   saveLanguage(currentLanguage);
@@ -934,6 +982,7 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
+setupCaseToggles();
 applyLanguage(getStoredLanguage() ?? defaultLanguage);
 applyTheme(getStoredTheme() ?? "dark");
 applyCaseFilter("all");
