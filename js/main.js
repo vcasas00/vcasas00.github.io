@@ -103,7 +103,6 @@ const translations = {
     "cases.recruitmentClient": "Recruitment Company",
     "cases.hospitalityClient": "Hospitality Company",
     "cases.roadClient": "Road Infrastructure Company",
-    "cases.ngoClient": "NGO",
     "cases.enterpriseClient": "Enterprise Operations Team",
     "cases.energyClient": "Energy Industry Company",
     "cases.industrialInstallationsClient": "Industrial Installations Company",
@@ -184,11 +183,6 @@ const translations = {
       "Designed Jira dashboards, filters and reporting views aligned with management needs.",
     "cases.jiraReportingImpact":
       "Improved delivery visibility and reduced manual preparation for recurring status meetings.",
-    "cases.ngoTitle": "NGO IT Administration & Support",
-    "cases.ngoChallenge": "Small teams needed reliable systems, user support and clear technical documentation.",
-    "cases.ngoSolution": "Provided platform administration, user assistance, asset organization and support processes.",
-    "cases.ngoImpact":
-      "Strengthened daily IT operations and helped non-technical users work with fewer interruptions.",
     "cases.energyAvailabilityTitle": "Custom Machine Availability Control App",
     "cases.energyAvailabilityChallenge":
       "Operational teams needed a clearer way to track machine availability and identify status changes.",
@@ -372,7 +366,6 @@ const translations = {
     "cases.recruitmentClient": "Empresa de selección de personal",
     "cases.hospitalityClient": "Empresa hotelera",
     "cases.roadClient": "Empresa de infraestructura vial",
-    "cases.ngoClient": "ONG",
     "cases.enterpriseClient": "Equipo de operaciones empresariales",
     "cases.energyClient": "Empresa de la industria energética",
     "cases.industrialInstallationsClient": "Empresa de instalaciones industriales",
@@ -453,13 +446,6 @@ const translations = {
       "Diseño de dashboards, filtros y vistas de reporting en Jira alineadas con necesidades de dirección.",
     "cases.jiraReportingImpact":
       "Mejor visibilidad de la entrega y menos preparación manual para reuniones periódicas de estado.",
-    "cases.ngoTitle": "Administración IT y soporte para ONG",
-    "cases.ngoChallenge":
-      "Equipos pequeños necesitaban sistemas fiables, soporte a usuarios y documentación técnica clara.",
-    "cases.ngoSolution":
-      "Administración de plataformas, asistencia a usuarios, organización de activos y procesos de soporte.",
-    "cases.ngoImpact":
-      "Operaciones IT diarias más sólidas y menos interrupciones para usuarios no técnicos.",
     "cases.energyAvailabilityTitle": "App a medida para control de disponibilidad de máquinas",
     "cases.energyAvailabilityChallenge":
       "Los equipos operativos necesitaban una forma más clara de controlar la disponibilidad de sus máquinas e identificar cambios de estado.",
@@ -644,7 +630,6 @@ const translations = {
     "cases.recruitmentClient": "Empresa de selecció de personal",
     "cases.hospitalityClient": "Empresa d'hostaleria",
     "cases.roadClient": "Empresa d'infraestructura viària",
-    "cases.ngoClient": "ONG",
     "cases.enterpriseClient": "Equip d'operacions empresarials",
     "cases.energyClient": "Empresa de la indústria energètica",
     "cases.industrialInstallationsClient": "Empresa d'instal·lacions industrials",
@@ -725,13 +710,6 @@ const translations = {
       "Disseny de dashboards, filtres i vistes de reporting a Jira alineades amb necessitats de direcció.",
     "cases.jiraReportingImpact":
       "Millor visibilitat de l'entrega i menys preparació manual per a reunions periòdiques d'estat.",
-    "cases.ngoTitle": "Administració IT i suport per a ONG",
-    "cases.ngoChallenge":
-      "Equips petits necessitaven sistemes fiables, suport a usuaris i documentació tècnica clara.",
-    "cases.ngoSolution":
-      "Administració de plataformes, assistència a usuaris, organització d'actius i processos de suport.",
-    "cases.ngoImpact":
-      "Operacions IT diàries més sòlides i menys interrupcions per a usuaris no tècnics.",
     "cases.energyAvailabilityTitle": "App a mida per al control de disponibilitat de màquines",
     "cases.energyAvailabilityChallenge":
       "Els equips operatius necessitaven una manera més clara de controlar la disponibilitat de les seves màquines i identificar canvis d'estat.",
